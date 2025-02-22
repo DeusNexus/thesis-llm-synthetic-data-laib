@@ -145,7 +145,7 @@ This project explores the effectiveness of using synthetic data to enhance machi
 3. Reduced overfitting
 4. More robust predictions
 
-## Conclusion
+#### Conclusion
 The addition of synthetic data generally improved model performance, particularly for tree-based models like XGBoost and Random Forest. The results demonstrate the potential value of using synthetic data to enhance machine learning models in physics applications.
 
 
