@@ -131,6 +131,8 @@ This project explores the effectiveness of using synthetic data to enhance machi
 | SVR | 3.18 | 3.54 | 0.927 | 0.909 |
 | Neural Network | 4.50 | 3.91 | 0.854 | 0.890 |
 
+![Performance Comparison (Test Set)](5_result_analysis/baseline_vs_enhanced_models.png)
+
 ### Key Findings
 1. **General Improvement**: Most models showed improved performance when trained with synthetic data
 2. **Best Overall Model**: XGBoost (Enhanced) achieved the highest R² of 0.921
