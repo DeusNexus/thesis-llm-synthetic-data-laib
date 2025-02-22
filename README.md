@@ -94,6 +94,59 @@ This section provides a detailed summary of the key performance metrics evaluate
 - **Model Training on Synthetic Data**: The evaluation involved comparing machine learning models (Random Forests and Support Vector Regressors) trained on synthetic data against those trained on original data using unseen test sets. Models trained with synthetic data from Claude 3.5 Sonnet using Self-Consistency prompting performed comparably to those trained on original data, with slight variations in accuracy and R² metrics, indicating effective learning from synthetic data.
 - **Performance Metrics**: The models achieved notable similarities in performance metrics such as RMSE (Root Mean Squared Error) and R², particularly in Random Forests, which excelled in capturing complex relationships within the LAIB data when trained on synthetic datasets. These findings suggest that the synthetic data retains essential characteristics and dynamics of the original dataset, supporting its utility for model training and validation.
 
+# Model Training with Synthetic Data Enhancement
+
+This project explores the effectiveness of using synthetic data to enhance machine learning model performance for predicting cutoff energy in laser-plasma interactions.
+
+## Models and Approach
+
+### Models Implemented
+- Random Forest
+- XGBoost (GPU-accelerated)
+- LightGBM (GPU-accelerated) 
+- Support Vector Regression (SVR)
+- Neural Network (GPU-accelerated)
+
+### Training Strategy
+- **Baseline Models**: Trained on original data only
+- **Enhanced Models**: Trained on combined original + synthetic data
+- Used 10-fold cross-validation with grid search for hyperparameter optimization
+- Models evaluated using RMSE and R² metrics
+
+### Data Processing
+- Features: target_thickness, pulse_width, energy, spot_size, intensity, power
+- Target variable: cutoff_energy
+- Applied standardization and outlier removal
+- Train/test split: 80/20
+
+## Results
+
+### Performance Comparison (Test Set)
+
+| Model | Baseline RMSE | Enhanced RMSE | Baseline R² | Enhanced R² |
+|-------|---------------|---------------|-------------|-------------|
+| Random Forest | 3.59 | 3.39 | 0.907 | 0.917 |
+| XGBoost | 4.30 | 3.32 | 0.867 | 0.921 |
+| LightGBM | 4.37 | 3.82 | 0.862 | 0.895 |
+| SVR | 3.18 | 3.54 | 0.927 | 0.909 |
+| Neural Network | 4.50 | 3.91 | 0.854 | 0.890 |
+
+### Key Findings
+1. **General Improvement**: Most models showed improved performance when trained with synthetic data
+2. **Best Overall Model**: XGBoost (Enhanced) achieved the highest R² of 0.921
+3. **Largest Improvement**: XGBoost showed the most significant enhancement, with RMSE improving from 4.30 to 3.32
+4. **Exception**: SVR performed slightly better with baseline data, suggesting synthetic data may not always benefit all model types
+
+### Advantages of Synthetic Data
+1. Increased training data volume
+2. Better generalization in most models
+3. Reduced overfitting
+4. More robust predictions
+
+## Conclusion
+The addition of synthetic data generally improved model performance, particularly for tree-based models like XGBoost and Random Forest. The results demonstrate the potential value of using synthetic data to enhance machine learning models in physics applications.
+
+
 ### Implications and Future Directions
 These results confirm the potential of LLMs, particularly larger, more advanced models like Claude 3.5 Sonnet, in generating highly accurate synthetic data for complex scientific datasets like LAIB. The discrepancies highlighted by the Kolmogorov-Smirnov test underscore the need for continuous refinement of synthetic data generation techniques, especially in capturing extremities and tail behaviors of distributions. The successful application of synthetic data in machine learning model training also suggests promising avenues for enhancing experimental setups and computational simulations in laser-accelerated ion beam studies and beyond.
 
