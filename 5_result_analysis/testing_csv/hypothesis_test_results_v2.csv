@@ -1,0 +1,7 @@
+model_name,prompt_method,sample_size,n_samples,kl_statistic,ks_statistic,p_value_kl,p_value_ks,effect_size_kl,effect_size_ks,significant_5_kl,significant_5_ks
+claude-3-5-sonnet-20240620,self_consistency,rs_size_150,3000,0,0.09902592939706342,1.0,0.0,0.0,0.003529743736510446,False,True
+claude-3-5-sonnet-20240620,self_consistency,,3000,0,0.09902592939706342,1.0,0.0,0.0,0.003529743736510446,False,True
+claude-3-5-sonnet-20240620,,rs_size_150,3000,0,0.09902592939706342,1.0,0.0,0.0,0.003529743736510446,False,True
+claude-3-5-sonnet-20240620,,,3000,0,0.09902592939706342,1.0,0.0,0.0,0.003529743736510446,False,True
+,self_consistency,,3000,0,0.09902592939706342,1.0,0.0,0.0,0.003529743736510446,False,True
+,,rs_size_150,3000,0,0.09902592939706342,1.0,0.0,0.0,0.003529743736510446,False,True

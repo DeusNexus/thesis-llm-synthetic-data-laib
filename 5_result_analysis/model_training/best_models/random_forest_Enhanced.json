@@ -1,0 +1,14 @@
+{
+    "parameters": {
+        "max_depth": 10,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "n_estimators": 500
+    },
+    "metrics": {
+        "rmse": 1.166331535595545,
+        "r2": 0.9895250365126114
+    },
+    "timestamp": "20250221_160341",
+    "version": "Enhanced"
+}

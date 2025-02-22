@@ -1,0 +1,17 @@
+{
+    "parameters": {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.05,
+        "max_depth": 9,
+        "min_child_samples": 50,
+        "n_estimators": 500,
+        "num_leaves": 62,
+        "subsample": 0.8
+    },
+    "metrics": {
+        "rmse": 2.232754423282573,
+        "r2": 0.9695233743409737
+    },
+    "timestamp": "20250221_174711",
+    "version": "Baseline"
+}

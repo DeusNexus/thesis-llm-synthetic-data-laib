@@ -1,0 +1,17 @@
+{
+    "parameters": {
+        "C": 100,
+        "coef0": 0.0,
+        "epsilon": 0.2,
+        "gamma": 0.1,
+        "kernel": "rbf",
+        "shrinking": false,
+        "tol": 0.001
+    },
+    "metrics": {
+        "rmse": 1.4438029904002687,
+        "r2": 0.9857609025868237
+    },
+    "timestamp": "20250221_203425",
+    "version": "Enhanced"
+}

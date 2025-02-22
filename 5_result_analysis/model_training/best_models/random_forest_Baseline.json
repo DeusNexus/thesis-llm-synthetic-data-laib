@@ -1,0 +1,14 @@
+{
+    "parameters": {
+        "max_depth": 10,
+        "min_samples_leaf": 4,
+        "min_samples_split": 2,
+        "n_estimators": 500
+    },
+    "metrics": {
+        "rmse": 1.8888003920399634,
+        "r2": 0.9652218424428396
+    },
+    "timestamp": "20250221_142653",
+    "version": "Baseline"
+}

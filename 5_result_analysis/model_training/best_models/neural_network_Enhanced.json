@@ -1,0 +1,16 @@
+{
+    "parameters": {
+        "batch_size": 32,
+        "epochs": 100,
+        "layer1_units": 128,
+        "layer2_units": 128,
+        "layer3_units": 64,
+        "learning_rate": 0.001
+    },
+    "metrics": {
+        "rmse": 1.3792275980986142,
+        "r2": 0.9881754517555237
+    },
+    "timestamp": "20250221_231130",
+    "version": "Enhanced"
+}

@@ -1,0 +1,16 @@
+{
+    "parameters": {
+        "batch_size": 32,
+        "epochs": 50,
+        "layer1_units": 256,
+        "layer2_units": 128,
+        "layer3_units": 32,
+        "learning_rate": 0.001
+    },
+    "metrics": {
+        "rmse": 1.309459343062404,
+        "r2": 0.9895173907279968
+    },
+    "timestamp": "20250221_212200",
+    "version": "Baseline"
+}

@@ -1,0 +1,17 @@
+{
+    "parameters": {
+        "C": 100,
+        "coef0": 0.0,
+        "epsilon": 0.2,
+        "gamma": "auto",
+        "kernel": "rbf",
+        "shrinking": false,
+        "tol": 0.001
+    },
+    "metrics": {
+        "rmse": 1.673224537862222,
+        "r2": 0.9828843493428383
+    },
+    "timestamp": "20250221_184157",
+    "version": "Baseline"
+}

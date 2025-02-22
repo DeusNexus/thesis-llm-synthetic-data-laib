@@ -1,0 +1,2 @@
+,model,prompt_method,n_samples,KL Divergence,Wasserstein,MMD
+0,claude-3-5-sonnet-20240620,self_consistency,3000,3.975431843483337,0.1587066952971192,0.0035060201102783406

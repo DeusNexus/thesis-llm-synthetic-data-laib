@@ -1,0 +1,2 @@
+,model,prompt_method,sample_size,extracted_data_len
+0,claude-3-5-sonnet-20240620,self_consistency,rs_size_150,1.0
